@@ -151,9 +151,10 @@ body{
   background:var(--accent-2);
 }
 .section-title{
-  font-size:1.3rem;
+  font-size:1.6rem;
   margin:0 0 1.2rem;
   font-family: 'Rubik', sans-serif;
+  text-align:center;
 }
 
 
@@ -225,6 +226,36 @@ body{
   font-size: 1.5rem;
   align-self: end;
 }
+
+/* Make "Notes & Short Reads" title larger */
+#notes .section-title{
+  font-size:2rem;
+  text-align:center;
+}
+
+
+/* Notes carousel */
+#notes .carousel { margin-top: 1rem; }
+
+#notes .carousel .note {
+  width: 100%;
+  max-width: 780px;
+  margin: 0 auto;
+  min-height: 220px;
+}
+
+/* Darker controls to match your palette */
+#notes .carousel-control.left,
+#notes .carousel-control.right {
+  background-image: none;
+  color: var(--accent);
+  opacity: 0.8;
+}
+#notes .carousel-control:hover { opacity: 1; }
+
+/* Indicators color tweak */
+#notes .carousel-indicators li { border-color: var(--accent); }
+#notes .carousel-indicators .active { background-color: var(--accent); }
 
 
 /* Awareness and Retreats */
